@@ -62,21 +62,26 @@ public class RetrieveMessageTask extends AsyncTask<Void, Void, String>{
 
         }
 
-//        public String getQuote()
-//        {
-//            try
-//            {
-//                JSONObject obj = new JSONObject(response);
-//                String quote = obj.getJSONObject("quotes").getString("quote");
-//                return quote;
-//            }
-//
-//            catch JSONException (JSONException e)
-//            {
-//                Log.e("error", "error   is occurring");
-//            }
-//
-//        }
+        public String getQuote()
+        {
+            String quote = "";
+            try
+            {
+                Log.v("tag", "Inside the try");
+                JSONObject obj = new JSONObject();
+                Log.v("tag", "Created JSONObject");
+                quote = obj.getJSONObject("quotes").getString("quote");
+                Log.v("tag", "Retrieved quote: " + quote);
+                return quote;
+            }
+            catch(JSONException e)
+            {
+                Log.e("error", "error   is occurring");
+                return quote;
+            }
+
+
+        }
 
     }
 

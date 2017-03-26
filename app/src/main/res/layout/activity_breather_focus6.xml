@@ -9,6 +9,7 @@
     tools:context="com.example.hshack.destress.BreatherFocus6">
 
     <ImageView
+        android:id="@+id/gif6"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:src="@mipmap/ic_launcher"

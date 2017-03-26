@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import org.json.*;
 
@@ -23,8 +24,10 @@ public class Messages extends AppCompatActivity {
                 retrieve.execute();
                 Log.i("clicked","button is clicked!");
 
+                String quote = retrieve.getQuote();
 
-
+                TextView text = (TextView) findViewById(R.id.responseView);
+                text.setText(quote);
             }
 
         });
