@@ -16,28 +16,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainScreen" />
         <activity
             android:name=".Breather"
             android:label="@string/title_activity_breather" />
         <activity
             android:name=".BreatherFocus1"
-            android:label="@string/title_activity_breather_focus1"></activity>
+            android:label="@string/title_activity_breather_focus1" />
         <activity
             android:name=".BreatherFocus2"
-            android:label="@string/title_activity_breather_focus2"></activity>
+            android:label="@string/title_activity_breather_focus2" />
         <activity
             android:name=".BreatherFocus3"
-            android:label="@string/title_activity_breather_focus3"></activity>
+            android:label="@string/title_activity_breather_focus3" />
         <activity
             android:name=".BreatherFocus4"
-            android:label="@string/title_activity_breather_focus4"></activity>
+            android:label="@string/title_activity_breather_focus4" />
         <activity
             android:name=".BreatherFocus5"
-            android:label="@string/title_activity_breather_focus5"></activity>
+            android:label="@string/title_activity_breather_focus5" />
         <activity
             android:name=".BreatherFocus6"
-            android:label="@string/title_activity_breather_focus6"></activity>
+            android:label="@string/title_activity_breather_focus6" />
+        <activity
+            android:name=".Notifications"
+            android:label="@string/title_activity_notifications"></activity>
+        <activity
+            android:name=".Messages"
+            android:label="@string/title_activity_messages"></activity>
     </application>
 
 </manifest>

@@ -12,4 +12,6 @@
     <string name="title_activity_breather_focus4">BreatherFocus4</string>
     <string name="title_activity_breather_focus5">BreatherFocus5</string>
     <string name="title_activity_breather_focus6">BreatherFocus6</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="title_activity_messages">Messages</string>
 </resources>

@@ -15,29 +15,29 @@
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
 
-        <TextView
-            android:id="@+id/main"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="mainscreen"
-            style="@style/MainActivityShortcuts"/>
+        <Button
+            android:id="@+id/breathing_button"
+            style="@style/MainButton"
+            android:text="Breathing" />
 
-        <TextView
-            android:id="@+id/breathing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="breathing menu"
-            style="@style/MainActivityShortcuts"/>
+        <Button
+            android:id="@+id/messages_button"
+            style="@style/MainButton"
+            android:text="Messages" />
 
-        <TextView
-            android:id="@+id/messages"
+        <Button
+            android:id="@+id/notifications_button"
+            style="@style/MainButton"
+            android:text="Notifications" />
+
+        <android.support.constraint.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="messages screen"
-            style="@style/MainActivityShortcuts"/>
+            android:id="@+id/guideline"
+            app:layout_constraintGuide_begin="20dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="20dp" />
 
     </LinearLayout>
-
-
-
 </LinearLayout>
