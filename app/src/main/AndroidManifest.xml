@@ -21,9 +21,6 @@
             android:name=".Breather"
             android:label="@string/title_activity_breather" />
         <activity
-            android:name=".Navigation"
-            android:label="@string/title_activity_navigation" />
-        <activity
             android:name=".BreatherFocus1"
             android:label="@string/title_activity_breather_focus"></activity>
     </application>
