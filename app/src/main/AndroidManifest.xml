@@ -22,7 +22,22 @@
             android:label="@string/title_activity_breather" />
         <activity
             android:name=".BreatherFocus1"
-            android:label="@string/title_activity_breather_focus"></activity>
+            android:label="@string/title_activity_breather_focus1"></activity>
+        <activity
+            android:name=".BreatherFocus2"
+            android:label="@string/title_activity_breather_focus2"></activity>
+        <activity
+            android:name=".BreatherFocus3"
+            android:label="@string/title_activity_breather_focus3"></activity>
+        <activity
+            android:name=".BreatherFocus4"
+            android:label="@string/title_activity_breather_focus4"></activity>
+        <activity
+            android:name=".BreatherFocus5"
+            android:label="@string/title_activity_breather_focus5"></activity>
+        <activity
+            android:name=".BreatherFocus6"
+            android:label="@string/title_activity_breather_focus6"></activity>
     </application>
 
 </manifest>
