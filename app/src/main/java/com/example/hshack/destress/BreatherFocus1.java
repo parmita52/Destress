@@ -17,6 +17,8 @@ public class BreatherFocus1 extends AppCompatActivity {
 
         GifImageView gifImageView = (GifImageView) findViewById(R.id.gif1);
         gifImageView.setGifImageResource(R.drawable.blueg);
+        gifImageView.setScaleX(2.0f);
+        gifImageView.setScaleY(2.0f);
     }
 
 }
