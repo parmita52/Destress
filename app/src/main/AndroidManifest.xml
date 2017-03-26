@@ -19,7 +19,11 @@
         <activity android:name=".MainScreen" />
         <activity
             android:name=".Breather"
-            android:label="@string/title_activity_breather"></activity>
+            android:label="@string/title_activity_breather" />
+        <activity
+            android:name=".BreatherFocus"
+            android:label="@string/title_activity_breather_focus"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
