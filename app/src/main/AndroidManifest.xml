@@ -21,8 +21,31 @@
             android:name=".Breather"
             android:label="@string/title_activity_breather" />
         <activity
-            android:name=".BreatherFocus"
+            android:name=".BreatherFocus1"
             android:label="@string/title_activity_breather_focus"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Navigation"
+            android:label="@string/title_activity_navigation" />
+        <activity
+            android:name=".BreatherFocus2"
+            android:label="@string/title_activity_breather_focus2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BreatherFocus3"
+            android:label="@string/title_activity_breather_focus3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BreatherFocus4"
+            android:label="@string/title_activity_breather_focus4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BreatherFocus5"
+            android:label="@string/title_activity_breather_focus5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BreatherFocus6"
+            android:label="@string/title_activity_breather_focus6"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

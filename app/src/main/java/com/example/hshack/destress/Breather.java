@@ -1,42 +1,40 @@
 package com.example.hshack.destress;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.*;
+import android.view.*;
+import android.util.*;
+import android.content.*;
 
 public class Breather extends AppCompatActivity {
-
-    private TextView mTextMessage;
-
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
-            }
-            return false;
-        }
-
-    };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_breather);
+        setContentView(R.layout.activity_navigation);
 
+        ImageButton button1= (ImageButton) findViewById(R.id.imageButton1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("clicks", "button 1 has been clicked");
+                startActivity(new Intent(Breather.this, BreatherFocus1.class));
+            }
+        });
+
+        ImageButton button2= (ImageButton) findViewById(R.id.imageButton2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("clicks", "button 2 has been clicked");
+                startActivity(new Intent(Breather.this, BreatherFocus2.class));
+            }
+        });
     }
 
 }
+
+
+
+
+
+
+

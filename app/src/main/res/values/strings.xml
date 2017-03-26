@@ -5,4 +5,10 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_breather_focus">BreatherFocus</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_activity_breather_focus2">BreatherFocus2</string>
+    <string name="title_activity_breather_focus3">BreatherFocus3</string>
+    <string name="title_activity_breather_focus4">BreatherFocus4</string>
+    <string name="title_activity_breather_focus5">BreatherFocus5</string>
+    <string name="title_activity_breather_focus6">BreatherFocus6</string>
 </resources>
