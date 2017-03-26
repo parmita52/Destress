@@ -24,6 +24,21 @@
         <item name="android:textColor">#ffffff</item>
     </style>
 
+    <style name="NotificationButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@color/colorGreen</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
     <style name="Gifs">
         <item name="android:layout_margin">40dp</item>
         <item name="android:layout_gravity">center</item>
@@ -31,6 +46,12 @@
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">100dp</item>
         <!--<item name="android:scaleType">fitXY</item>-->
+    </style>
+
+    <style name="BodyContent">
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="MainActivityShortcuts">
