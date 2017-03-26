@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context="com.example.hshack.destress.BreatherFocus1">
 
-    <ImageView
+    <com.example.hshack.destress.GifImageView
         android:id="@+id/gif1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

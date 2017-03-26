@@ -14,6 +14,9 @@ public class BreatherFocus1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_breather_focus1);
+
+        GifImageView gifImageView = (GifImageView) findViewById(R.id.gif1);
+        gifImageView.setGifImageResource(R.drawable.blueg);
     }
 
 }
