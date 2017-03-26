@@ -8,4 +8,27 @@
     android:orientation="vertical"
     tools:context="com.example.hshack.destress.Messages">
 
+    <Button
+        android:id="@+id/queryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text ="click here for a message"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+            <TextView
+                android:id="@+id/responseView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
 </LinearLayout>
+
+
