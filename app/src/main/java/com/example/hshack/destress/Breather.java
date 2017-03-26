@@ -20,14 +20,6 @@ public class Breather extends AppCompatActivity {
                 startActivity(new Intent(Breather.this, BreatherFocus1.class));
             }
         });
-
-        ImageButton button2= (ImageButton) findViewById(R.id.imageButton2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.i("clicks", "button 2 has been clicked");
-                startActivity(new Intent(Breather.this, BreatherFocus2.class));
-            }
-        });
     }
 
 }
