@@ -11,7 +11,7 @@ public class Breather extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_navigation);
+        setContentView(R.layout.activity_breather);
 
         ImageButton button1= (ImageButton) findViewById(R.id.imageButton1);
         button1.setOnClickListener(new View.OnClickListener() {
