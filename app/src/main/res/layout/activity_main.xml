@@ -30,6 +30,11 @@
             style="@style/MainButton"
             android:text="Notifications" />
 
+        <Button
+            android:id="@+id/sounds_button"
+            style="@style/MainButton"
+            android:text="Sounds" />
+
         <android.support.constraint.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -34,5 +34,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Notifications.class));
             }
         });
+
+        Button sounds = (Button) findViewById(R.id.sounds_button);
+        sounds.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Sounds.class));
+            }
+        });
     }
 }
