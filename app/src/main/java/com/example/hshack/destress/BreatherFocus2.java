@@ -15,6 +15,8 @@ public class BreatherFocus2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_breather_focus2);
 
+        GifImageView gifImageView = (GifImageView) findViewById(R.id.gif2);
+        gifImageView.setGifImageResource(R.drawable.clockg);
     }
 
 }

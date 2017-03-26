@@ -8,13 +8,10 @@
     android:orientation="vertical"
     tools:context="com.example.hshack.destress.BreatherFocus5">
 
-    <ImageView
+    <com.example.hshack.destress.GifImageView
         android:id="@+id/gif5"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
         android:src="@mipmap/ic_launcher"
-        android:layout_gravity="center"
-        android:adjustViewBounds="true"/>
+        style="@style/Gifs"/>
     <!--android:scaleType="centerCrop"-->
 
 </LinearLayout>
