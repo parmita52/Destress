@@ -4,31 +4,39 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.*;
 
 import org.json.*;
 
 
-public class Messages extends AppCompatActivity {
+public class Messages extends AppCompatActivity implements InterestingEvent{
+
+    private RetrieveMessageTask rmt;
+
+    public Messages()
+    {
+        rmt = new RetrieveMessageTask(this);
+    }
+
+    public void interestingEvent()
+    {
+        TextView text = (TextView) findViewById(R.id.responseView);
+        Log.v("tag", "this should be the very last log");
+        text.setText(rmt.getQuote());
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_messages);
+        rmt = new RetrieveMessageTask(this);
 
         Button button = (Button) findViewById(R.id.queryButton);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                RetrieveMessageTask retrieve = new RetrieveMessageTask();
-
-                //retrieve.execute();
+                rmt.execute();
                 Log.i("clicked","button is clicked!");
 
-
-
-                TextView text = (TextView) findViewById(R.id.responseView);
-                text.setText(RetrieveMessageTask.getQuote());
             }
 
         });
