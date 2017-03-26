@@ -11,6 +11,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.*;
 
 import org.json.*;
 import org.json.JSONException;
@@ -19,7 +20,9 @@ public class RetrieveMessageTask extends AsyncTask<Void, Void, String>{
 
         private Exception exception;
 
-        private String response;
+        private static String response;
+
+        public static String quote;
 
         protected void onPreExecute() {
             response = "";
@@ -59,28 +62,42 @@ public class RetrieveMessageTask extends AsyncTask<Void, Void, String>{
 
             Log.i("INFO", responses);
             response = responses;
+            String quotes = retrieveQuote();
+            quote = quotes;
 
         }
 
-        public String getQuote()
+        public static String retrieveQuote()
         {
-            String quote = "";
-            try
-            {
-                Log.v("tag", "Inside the try");
-                JSONObject obj = new JSONObject();
-                Log.v("tag", "Created JSONObject");
-                quote = obj.getJSONObject("quotes").getString("quote");
-                Log.v("tag", "Retrieved quote: " + quote);
-                return quote;
-            }
-            catch(JSONException e)
-            {
-                Log.e("error", "error   is occurring");
-                return quote;
-            }
+            String quote1 = "\"quote\":\"Do not be afraid to give up the good for the great.\",\"length\":\"51\",\"author\":\"Kenny Rogers\",\"tags\":[\"g";
+//            try
+//            {
+//                Log.v("tag", "Inside the try");
+//                JSONObject obj = new JSONObject(response);
+//                Log.v("tag", "Created JSONObject");
+//                JSONArray array = obj.getJSONObject("contents").getJSONArray("quotes");
+//                Log.v("tag", "the array did create");
+//                quote1 =  array.getString(0);
+//                Log.v("tag", "Retrieved quote: " + quote1);
+                StringTokenizer st = new StringTokenizer(quote1, ",");
+                String quote2 = st.nextToken();
+                quote2 = quote2.substring(9, quote2.length() - 1);
+                Log.v("tag", "final quote " + quote2);
+                return quote2;
+//            }
+//            catch(JSONException e)
+//            {
+//                Log.e("error", "error   is occurring");
+//                return quote1;
+//            }
 
 
+        }
+
+        public static String getQuote()
+        {
+            quote = retrieveQuote();
+            return quote;
         }
 
     }

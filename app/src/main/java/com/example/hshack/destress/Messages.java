@@ -21,13 +21,14 @@ public class Messages extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 RetrieveMessageTask retrieve = new RetrieveMessageTask();
-                retrieve.execute();
+
+                //retrieve.execute();
                 Log.i("clicked","button is clicked!");
 
-                String quote = retrieve.getQuote();
+
 
                 TextView text = (TextView) findViewById(R.id.responseView);
-                text.setText(quote);
+                text.setText(RetrieveMessageTask.getQuote());
             }
 
         });
