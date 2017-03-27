@@ -8,6 +8,22 @@
     android:orientation="vertical"
     tools:context="com.example.hshack.destress.Sounds">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NotificationButton"
+        android:id="@+id/bird_button"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NotificationButton"
+        android:id="@+id/crisp_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NotificationButton"
+        android:id="@+id/ocean_button"/>
 
 </LinearLayout>
