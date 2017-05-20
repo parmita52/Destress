@@ -61,6 +61,16 @@
         <!--<item name="android:scaleType">fitXY</item>-->
     </style>
 
+    <style name="Quote">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">28dp</item>
+        <item name="android:layout_margin">50dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
     <style name="BodyContent">
         <item name="android:textSize">18dp</item>
         <item name="android:layout_margin">20dp</item>
