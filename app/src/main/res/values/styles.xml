@@ -12,16 +12,28 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:padding">15dp</item>
+        <item name="android:padding">5dp</item>
         <item name="android:layout_marginBottom">15dp</item>
         <item name="android:layout_marginTop">35dp</item>
         <item name="android:layout_marginLeft">50dp</item>
         <item name="android:layout_marginRight">50dp</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:layout_weight">1</item>
         <item name="android:background">@color/colorGreen</item>
         <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="MicButton">
+        <item name="android:layout_width">350px</item>
+        <item name="android:layout_height">350px</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:background">@drawable/mic_button</item>
     </style>
 
     <style name="NotificationButton">

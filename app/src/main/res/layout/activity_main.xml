@@ -21,6 +21,11 @@
             android:text="Breathing" />
 
         <Button
+            android:id="@+id/feelings_button"
+            style="@style/MainButton"
+            android:text="Feelings" />
+
+        <Button
             android:id="@+id/messages_button"
             style="@style/MainButton"
             android:text="Messages" />

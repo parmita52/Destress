@@ -21,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button feelings = (Button) findViewById(R.id.feelings_button);
+        feelings.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Feelings.class));
+            }
+        });
+
         Button messages = (Button) findViewById(R.id.messages_button);
         messages.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

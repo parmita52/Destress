@@ -48,7 +48,8 @@
             android:label="@string/title_activity_messages" />
         <activity
             android:name=".Sounds"
-            android:label="@string/title_activity_sounds"></activity>
+            android:label="@string/title_activity_sounds" />
+        <activity android:name=".Feelings"></activity>
     </application>
 
 </manifest>
