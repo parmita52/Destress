@@ -8,6 +8,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -18,7 +19,7 @@ import android.widget.Toast;
 
 import com.example.hshack.destress.R;
 
-public class Hive extends Activity {
+public class Hive extends AppCompatActivity {
 
     private TextView txtSpeechInput;
     private Button btnSpeak;
@@ -28,12 +29,15 @@ public class Hive extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feelings);
+        Log.e("", "CHECK");
 
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (Button) findViewById(R.id.mic_button);
 
-        // hide the action bar
-        getActionBar().hide();
+        Log.e("", "Buttons work");
+
+//        // hide the action bar
+//        getActionBar().hide();
 
         btnSpeak.setOnClickListener(new View.OnClickListener() {
 
