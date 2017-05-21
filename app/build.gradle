@@ -33,5 +33,6 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp-ws:3.4.2'
     compile 'com.ibm.watson.developer_cloud:android-sdk:0.2.3'
     compile 'com.ibm.watson.developer_cloud:speech-to-text:3.5.3'
+    compile 'com.ibm.watson.developer_cloud:speech-to-text:3.8.0'
     testCompile 'junit:junit:4.12'
 }

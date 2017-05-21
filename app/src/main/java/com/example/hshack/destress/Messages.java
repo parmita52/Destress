@@ -1,5 +1,6 @@
 package com.example.hshack.destress;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -12,6 +13,8 @@ import org.json.*;
 public class Messages extends AppCompatActivity implements InterestingEvent{
 
     private RetrieveMessageTask rmt;
+    public MediaPlayer mpOpen;
+    public boolean opened = false;
 
     public Messages()
     {
@@ -31,12 +34,27 @@ public class Messages extends AppCompatActivity implements InterestingEvent{
         setContentView(R.layout.activity_messages);
         rmt = new RetrieveMessageTask(this);
 
-        Button button = (Button) findViewById(R.id.queryButton);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                rmt.execute();
-                Log.i("clicked","button is clicked!");
+//        Button button = (Button) findViewById(R.id.queryButton);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                rmt.execute();
+//                Log.i("clicked","button is clicked!");
+//
+//            }
+//
+//        });
 
+        TextView textButton = (TextView)findViewById(R.id.responseView);
+        mpOpen = MediaPlayer.create(this, R.raw.clip);
+        textButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (!opened)
+                {
+                    rmt.execute();
+                    Log.i("clicked","button is clicked!");
+                    mpOpen.start();
+                    opened = true;
+                }
             }
 
         });
